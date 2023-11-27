@@ -1,0 +1,77 @@
+<!-- REGISTRO MEDICOS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/styles/prestamo.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Asignación de equipo</h1>
+    </header>
+    <main>
+        <h2>PRESTAMOS</h2>
+        <div class="container-form">
+            <form>
+                <label for="numero_documento">Número de Documento:</label>
+                <input type="number" id="numero_id" name="numero_id" required><br><br>
+    
+                <label for="nombre">Nombres y apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            
+                <label for="perfil">Perfil:</label>
+                <select id="perfil" name="perfil" required>
+                    <option value="">-------Seleccione una opción-------</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="aprendiz">Aprendiz</option>
+                    <option value="otros">Otros</option>
+                </select><br><br>
+                <!-- ESPECIALIDAD -->
+            
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                <!-- El type tl permite que en celular aparezca en pantalla el teclado numerico -->
+                
+                <label for="email">Correo Institucional</label>
+                <input type="email" id="email" name="email" required placeholder="@fucsalud.edu.co"><br><br>
+                <label for="facultad">Facultad a la que Pertenece:</label>
+                <select id="facultad" name="facultad" required>
+                    <option value="">-------Seleccione una opción-------</option>
+                    <option value="medicina">Medicina</option>
+                    <option value="psicologia">Psicología</option>
+                    <option value="otros">Otros</option>
+                </select><br><br>
+                <!-- ESPECIALIDAD -->
+            
+                <label for="numero_portatil">Número de Portátil que se le Presta:</label>
+                <input type="number" id="numero_portatil" name="numero_portatil" required><br><br>
+                <!-- NUMERO DE CONSULTORIO -->
+                
+                <label for="fecha_prestamo">Fecha de Préstamo:</label>
+                <input type="datetime-local" id="fecha_prestamo" name="fecha_prestamo">
+                <!-- el readonly evita que le usuario edite el contenido directamente-->
+                <!-- Para ajustar lo del ahora de prestamo esa parte va en el backend de javascript -->
+                <label for="hora_prestamo">Hora de Préstamo:</label>
+                <input type="datetime" id="hora_prestamo" name="hora_prestamo" onclick="seleccionarHora()" readonly><br><br>
+                <!-- CORREO ELECTRONICO -->
+    
+                <label for="observaciones">Observaciones del Equipo Portátil:</label>
+                <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
+                 <input type="submit" value="Enviar"><br><br>
+                <button onclick="limpiarFormulario()">Limpiar Datos</button>
+                <button><a href="/index.html">Regresar a la página de inicio</a></button>
+            </form>
+            
+        </div>
+        
+    </main>
+    <footer>  
+        <p class="copyright"> &copy Derechos reservados Diego Fernando Marín 2023</p>
+    </footer>
+</body>
+</html>
+
