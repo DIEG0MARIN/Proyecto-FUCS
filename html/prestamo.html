@@ -62,8 +62,10 @@
                 <label for="observaciones">Observaciones del Equipo Portátil:</label>
                 <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
                  <input type="submit" value="Enviar"><br><br>
-                <button onclick="limpiarFormulario()">Limpiar Datos</button>
-                <button><a href="/index.html">Regresar a la página de inicio</a></button>
+                 <div class="boton-container">
+                    <button id="regresar"><a href="/index.html">Regresar a la página de inicio</a></button>
+                    <button id="limpiar" onclick="limpiarFormulario()">Limpiar Datos</button>
+                </div>
             </form>
             
         </div>
@@ -71,6 +73,7 @@
     </main>
     <footer>  
         <p class="copyright"> &copy Derechos reservados Diego Fernando Marín 2023</p>
+        
     </footer>
 </body>
 </html>
