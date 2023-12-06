@@ -15,7 +15,8 @@
     <main>
         <h2>PRESTAMOS</h2>
         <div class="container-form">
-            <form>
+            <form id="registro-prestamo">
+                <!-- id="registro-medicos-form" -->
                 <label for="numero_documento">Número de Documento:</label>
                 <input type="number" id="numero_id" name="numero_id" required><br><br>
     
@@ -55,13 +56,13 @@
                 <input type="datetime-local" id="fecha_prestamo" name="fecha_prestamo">
                 <!-- el readonly evita que le usuario edite el contenido directamente-->
                 <!-- Para ajustar lo del ahora de prestamo esa parte va en el backend de javascript -->
-                <label for="hora_prestamo">Hora de Préstamo:</label>
-                <input type="datetime" id="hora_prestamo" name="hora_prestamo" onclick="seleccionarHora()" readonly><br><br>
+                <!--<label for="hora_prestamo">Hora de Préstamo:</label>
+                <input type="datetime" id="hora_prestamo" name="hora_prestamo" onclick="seleccionarHora()" readonly><br><br>-->
                 <!-- CORREO ELECTRONICO -->
     
                 <label for="observaciones">Observaciones del Equipo Portátil:</label>
                 <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea><br><br>
-                 <input type="submit" value="Enviar"><br><br>
+                <input type="submit" value="Enviar"><br><br>
                  <div class="boton-container">
                     <button id="regresar"><a href="/index.html">Regresar a la página de inicio</a></button>
                     <button id="limpiar" onclick="limpiarFormulario()">Limpiar Datos</button>
@@ -75,6 +76,7 @@
         <p class="copyright"> &copy Derechos reservados Diego Fernando Marín 2023</p>
         
     </footer>
+    <script src="../app.js"></script>
 </body>
 </html>
 
